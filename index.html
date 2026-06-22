@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+
+
+
+ 
+
+
+            
+      
+        .navbar{
+            display:flex;
+            justify-content: space-between;
+            gap:30px;
+            padding:20px;
+            background-color: #f0f3fc;
+            position:sticky;
+            top:0px;
+            z-index: 2000;
+            
+        }
+        .navbar a{
+            text-decoration: none;
+        }
+        .navbar a:hover{
+            text-decoration: underline;
+        }
+        .one{
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap:40px;
+        }
+        .two{
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap:30px;
+        }
+        .three{
+              display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            background-image: url("https://templatepreview.website.com/remote/imageProxy.cfc?method=viewLibraryImage&s=QEAiVjogWkNERlJZT11ROEEyVj5ZWkZfPVJCLTZKST5FJFNUVDsvLz4qJ1wgCg%3D%3D&w=1920");
+            background-size: 70%;
+            
+            text-align: center;
+            color:white;
+
+        }
+        .three button{
+          
+            background-color: white;
+            color:#673de6;
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            position: relative;
+            margin:80px 0;
+            
+        }
+        .four{
+            margin-left:-300px;
+        }
+        .four img{
+            width:700px;
+            height: 500px;
+            object-fit: cover;
+        }
+        
+        .five{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width:450px;
+            position:absolute;
+            right:380px;
+            top:60px;
+            background-color:white;
+            z-index: 1000;
+            padding:25px 50px;
+            border-radius: 30px;
+        }
+        .five h1{
+            color:#673de6;
+        }
+        .five button{
+            background-color:#673de6;
+            color:white;
+        }
+        .none{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left:200px;
+            margin-right: 200px;
+            margin-bottom: 100px;
+        }
+        .none h1{
+            color:#673de6;
+            align-self: self-start;
+        }.tree{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height:700px;
+            padding:30px;
+            background-image: url("https://templatepreview.website.com/remote/imageProxy.cfc?method=viewLibraryImage&s=QF8iWTYrJU40IFhDKExHTzc6SV8pTEE8OUoqWzIvISIlITY7KThaJVJON0wgCg%3D%3D&w=1920");
+            background-size: 100%;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 100px;
+        }
+        .tree h2{
+            max-width: 1250px;
+            font-size: 50px;
+        }
+        .card{
+            display:flex;
+            justify-content: center;
+            align-items: space-between;
+            text-align: start;
+            margin:40px;
+            gap:20px;
+            margin-bottom: 100px;
+        }
+        .card img{
+            width:450px;
+        }
+        .team{
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin: 80px;
+            gap:20px;
+            text-align: center;
+        }
+        .team img{
+            width:350px;
+            height: 300px;
+        }
+        .hole{
+            background-color: #f0f3fc;
+        }
+        .row{
+            display:flex;
+            gap:30px;
+            margin-top:40px;
+        }
+        .feild{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+        }
+        input,textarea{
+            padding:12px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:16px;
+         } 
+        .form{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin:0;
+            background-color:#673de6;
+            color:white;
+            height:600px;
+            
+            font-family:Arial,sans-serif;
+        } 
+        .button{
+             display:block;
+             margin:50px auto 0;
+             width:180px;
+             height:50px;
+             border:none;
+             border-radius:5px;
+             background:#22c55e;
+             color:white;
+             font-size:18px;
+            cursor:pointer;
+        }  
+        .footer{
+            background-color: black;
+            color:white;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 600px;
+        }
+        .icons{
+            display: flex;
+            gap:20px;
+        }
+        html{
+            scroll-behavior: smooth;
+            
+        }
+        .btn{
+            background-color:#673de6;
+            padding:15px;
+            color:white;
+            border-radius: 30px;
+
+        }
+        .btn2{
+            background-color:#673de6;
+            padding:15px;
+            color:white;
+            border-radius: 25px;
+            width: 100px;
+        }
+        #head{
+            color:black;
+            font-size: 30px;
+            
+        }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .nav{
+            color:black;
+            font-size: 22px;
+        }
+        .icon{
+            color:black;
+        }
+        .card-two{
+            display: flex;
+           flex-direction: column;
+
+        }
+
+       
+@media screen and (max-width: 767px){
+
+    .navbar{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:15px;
+        
+        text-align:center;
+    }
+
+    .one,
+    .two{
+        flex-wrap: wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .three{
+        height:auto;
+        padding:60px 20px;
+        background-size: cover;
+    }
+
+    .container{
+        flex-direction: column;
+        margin:40px 20px;
+    }
+
+    .four{
+        margin-left:0;
+    }
+
+    .four img{
+        width:100%;
+        height:auto;
+    }
+
+    .five{
+        position:static;
+        width:auto;
+        padding:20px;
+        margin-top:20px;
+    }
+
+    .none{
+        margin:20px;
+    }
+
+    .tree{
+        height:auto;
+        padding:40px 20px;
+    }
+
+    .tree h2{
+        font-size:28px;
+    }
+
+    .card{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .card img{
+        width:100%;
+    }
+
+    .team{
+        grid-template-columns:1fr;
+        margin:20px;
+        margin-bottom: 100px;
+    }
+
+    .team img{
+        width:100%;
+        height:auto;
+    }
+
+    .row{
+        flex-direction:column;
+    }
+
+    form{
+        width:90%;
+
+    }
+    .form h1{
+        color:black;
+    }
+
+    textarea{
+        width:100%;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+    .navbar{
+        flex-wrap:wrap;
+    }
+
+    .container{
+        flex-direction:column;
+    }
+
+    .four{
+        margin-left:0;
+    }
+
+    .four img{
+        width:100%;
+        height:auto;
+    }
+
+    .five{
+        position:static;
+        width:80%;
+        margin:20px auto;
+    }
+
+    .none{
+        margin:50px;
+    }
+
+    .card{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .card img{
+        width:300px;
+    }
+
+    .team{
+        grid-template-columns:repeat(2,1fr);
+        margin:40px;
+    }
+
+    .team img{
+        width:100%;
+        height:auto;
+    }
+
+    .tree h2{
+        font-size:36px;
+    }
+}
+
+
+@media screen and (max-width:1200px){
+
+    .container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .four{
+        margin-left:0;
+    }
+
+    .four img{
+        width:90%;
+        height:auto;
+    }
+
+    .five{
+        position:static;
+        width:80%;
+        margin-top:20px;
+    }
+
+    .team{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .card{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+
+           
+
+    
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="one">
+            <a id="head">EpochAgency</a>
+            <a href="#banner" class="nav">Welcome</a>
+            <a href="#about" class="nav">about</a>
+            <a href="#pricing" class="nav">Pricing</a>
+            <a href="#team" class="nav">Team</a>
+            <a href="#contact" class="nav">Contact</a>
+
+        </div>
+        <div class="two">
+            <a class="btn2">Sign Up</a>
+            <a class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="icon"><i class="fa-brands fa-x-twitter"></i></a> 
+            <a class="icon"><i class="fa-brands fa-instagram"></i></a>
+
+        </div>
+    </nav>
+    <div class="three" id="banner">
+        <h1>Make It Stand Out</h1>
+        <p>A collaborative platform for all your needs.Learn how to optimize your team's output to maximize your work.<br>Using strategies with proven results,we can help boost your buisness and branding.<br>Begin your journey today and bring your ideas to life!</p>
+        <br><br>
+        <a class="btn">Get Started</a>
+    </div>
+
+    <div class="container" id="about">
+        <div class="four">
+            <img src="https://templatepreview.website.com/remote/imageProxy.cfc?method=viewLibraryImage&s=MFtASFBFRE8yMUAwVi8oQ0o3OyRRUkAgIAo%3D&w=1280" alt="image">
+
+        </div>
+        <div class="five">
+            <h1>We Are Epoch Agency</h1>
+            <p>Founded in 2020,Epoch Agency was created to offer a simpler solution for small buisness to improve their online presence through collabrative teamwork,web optimizing strategies,and community support.This is a Paragraph.You can write your own content here,and fill in the blanks.Whats your story and where do you go from here?Tell the world bout your buisness,and mak this thext yours.This is a paragraph.</p>
+            <br><br>
+            <a href="#pricing" class="btn">See Our Pricing</a>
+        </div>
+    </div>
+
+    <div class="none">
+        <h1>A Creative process For Our Valued Clients</h1>
+        <br><br>
+        <p>This is a paragraph. You can write your own content here, and fill in the blanks. What's your story and where do you go from here? Tell the world about your business, and make this text yours. This is a paragraph. You can write your own content here, and fill in the blanks. What's your story and where do you go from here? Tell the world about your business, and make this text yours. <br><br>This is a paragraph. You can write your own content here, and fill in the blanks. What's your story and where do you go from here? Tell the world about your business, and make this text yours. This is a paragraph. You can write your own content here, and fill in the blanks. What's your story and where do you go from here? Tell the world about your business, and make this text yours.
+This is a paragraph. You can write your own content here, and fill in the blanks. What's your story and where do you go from here? Tell the world about your business, and make this text yours. This is a paragraph. You can write your own content here, and fill in the blanks. What's your story and where do you go from here? Tell the world about your business, and make this text yours.</p>
+
+    </div>
+
+    <div class="tree">
+        <h2>Our design & dev team will go the extra mile to help your brand. We are a one-stop shop and provide a complete package to all of our valuable clients.</h2>
+    </div>
+    <div id="pricing">
+        <h1 style="margin-left: 40px;">A complete Package</h1>
+    </div>
+
+    <div class="card" >
+        <div class="card-two">
+            <img src="C:\Users\francko\OneDrive\Pictures\Screenshots\Screenshot 2026-06-19 105357.png" alt="image">
+            <h2>Basic Plan</h2>
+            <h5>Starting at $150/mo</h5>
+            <p>Our Basic plan is  perfect for small business owners who are looking for an affordable option to get started on expanding their online presence without the commitment and pressure.</p>
+            <a class="btn2">Get A Quote</a>
+        </div>
+   
+
+    
+    
+        <div class="card-two">
+            <img src="C:\Users\francko\OneDrive\Pictures\Screenshots\Screenshot 2026-06-19 105408.png" alt="image">
+            <h2>Creative Plan</h2>
+            <h5>Starting at $200/mo</h5>
+            <p>The Creative Plan is our most popular plan (and with good reason)! We help small to medium sized companies get an extra boost. Also includes all the amazing perks from the Basic Plan.</p>
+            <a class="btn2">Get a Quote</a>
+        </div>
+
+
+        <div class="card-two">
+            <img src="C:\Users\francko\OneDrive\Pictures\Screenshots\Screenshot 2026-06-19 105424.png" alt="image">
+            <h2>Premium Plan</h2>
+            <h5>Starting at $250/mo</h5>
+            <p>Upgrade to the Premium Plan for unlimited storage, 24/7 support, and monthly consultations with our specialists. Also includes all the amazing perks from all previous Plans.</p>
+            <a class="btn2">Get a Quote</a>
+        </div>
+
+        </div>
+
+
+    <div class="hole" id="team">
+        <h1 style="text-align: center;color:cornflowerblue;">Our Team</h1>
+        <div class="team">
+            <div>
+                <img src="https://templatepreview.website.com/remote/imageProxy.cfc?method=viewLibraryImage&s=MDExOzRGJjw8P0okRk9ZUFRKOklfW0AgIAo%3D&w=768" alt="image">
+                <h2>Josie Lane</h2>
+                <h4>JOB POSITION</h4>
+                <p>This is a paragraph. You can write your own content here, and fill in the blanks. What's your story and where do you go from here?</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+                <img src="https://templatepreview.website.com/remote/imageProxy.cfc?method=viewLibraryImage&s=MEZGKCRaOFpbIF9NV11OIks8T0RYNTAgIAo%3D&w=768" alt="image">
+                <h2>Martin Reed</h2>
+                <h4>JOB POSITION</h4>
+                <p>This is a paragraph. You can write your own content here, and fill in the blanks. What's your story and where do you go from here?</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+
+            </div>
+            <div>
+                <img src="https://templatepreview.website.com/remote/imageProxy.cfc?method=viewLibraryImage&s=MENWWVc%2BXUdcLVVMOD9cT000Lzc%2FRSAgIAo%3D&w=768" alt="image">
+                <h2>Cadace Lee</h2>
+                <h4>JOB POSITION</h4>
+                <p>This is a paragraph. You can write your own content here, and fill in the blanks. What's your story and where do you go from here?</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+
+            </div>
+
+        </div>
+    </div>  
+    
+    
+    <div class="form" id="contact">
+        <h1>sign Up & Get A Quote</h1>
+        <p>Let us know if there is anything we can do for you</p>
+
+        <form>
+            <div class="row">
+                <div class="feild">
+                    <label>First Name</label>
+                    <input type="text" required>
+
+                </div>
+                <div class="feild">
+                    <label>Last Name</label>
+                    <input type="text">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="feild">
+                    <label>Email</label>
+                    <input type="email" required>
+
+                </div>
+                
+            </div>
+
+            <div class="row">
+
+                <div class="feild">
+                    <label>Message</label>
+                    <textarea rows="4"cols="40" required></textarea>
+                </div>
+            </div>
+            <button class="button">submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <h2>EpochAgency</h2>
+        <p>888 Griffiths Way,Mainland ML 12345</p>
+        <p>(987) 654-3210</p>
+        <p>info@yoursite.com</p>
+        <br><br>
+        <div class="icons">
+            <a><i class="fa-brands fa-facebook-f"></i></a>
+            <a><i class="fa-brands fa-x-twitter"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+
+        </div>
+        <p>Copyright 2022 Epoch Agency,All Rights Reserved.</p>
+        <br><br>
+        <p>Website created & Hosted with Website.com Website Builder</p>
+    </div>
+    
+</body>
+</html>
